@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ag-banking-online';
+  isOpen = false;
+
+  onClick() {
+    this.isOpen = !this.isOpen;
+  }
 }
